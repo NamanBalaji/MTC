@@ -1,5 +1,6 @@
 *.class
 
+.**/
 # ignore all . files and . folders
 .*
 
