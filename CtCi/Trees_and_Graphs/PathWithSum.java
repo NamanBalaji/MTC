@@ -32,8 +32,8 @@ public class PathWithSum {
 			return;
 		}
 		
-		findFullPaths(root.left, sum - root.data, current, paths);
-		findFullPaths(root.right, sum - root.data, current, paths);
+		findFullPaths(root.left, sum - root.data, new ArrayList<Integer>(current), paths);
+		findFullPaths(root.right, sum - root.data, new ArrayList<Integer>(current), paths);
 		
 	}
 	
@@ -81,5 +81,6 @@ public class PathWithSum {
 		root.right.right.left.left.right = new TreeNode(2);
 		root.right.right.left.left.right.left = new TreeNode(1);
 		System.out.println(countPathsWithSum(root, -14));
+		System.out.println(getFullPaths(root, 3));
 	}
 }
