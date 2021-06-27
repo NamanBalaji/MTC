@@ -1,4 +1,4 @@
-package peakElement;
+package Leetcode.peakElement;
 
 import java.util.Scanner;
 

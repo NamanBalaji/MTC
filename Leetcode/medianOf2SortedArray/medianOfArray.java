@@ -1,4 +1,4 @@
-package medianOf2SortedArray;
+package Leetcode.medianOf2SortedArray;
 import java.util.*;
 public class medianOfArray {
     static double solution(int[] nums1, int[] nums2){

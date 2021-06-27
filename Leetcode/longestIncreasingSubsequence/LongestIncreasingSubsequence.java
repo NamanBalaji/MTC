@@ -1,4 +1,4 @@
-package longestIncreasingSubsequence;
+package Leetcode.longestIncreasingSubsequence;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;

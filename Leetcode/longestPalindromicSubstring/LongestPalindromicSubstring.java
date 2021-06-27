@@ -1,4 +1,4 @@
-package longestPalindromicSubstring;
+package Leetcode.longestPalindromicSubstring;
 
 import java.util.Scanner;
 

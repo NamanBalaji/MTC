@@ -1,4 +1,4 @@
-package jumpGame;
+package Leetcode.jumpGame;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package numberOfIslands;
+package Leetcode.numberOfIslands;
 
 import java.util.Scanner;
 

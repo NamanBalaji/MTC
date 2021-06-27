@@ -1,4 +1,4 @@
-package nSteps;
+package Leetcode.nSteps;
 import java.util.*;
 public class NSteps {
     public static int totalWays(int steps){

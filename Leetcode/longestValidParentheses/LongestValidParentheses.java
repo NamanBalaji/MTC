@@ -1,4 +1,4 @@
-package longestValidParentheses;
+package Leetcode.longestValidParentheses;
 
 import java.util.Scanner;
 import java.util.Stack;

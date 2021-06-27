@@ -1,4 +1,4 @@
-package coinChange;
+package Leetcode.coinChange;
 
 import java.util.Arrays;
 import java.util.Scanner;
