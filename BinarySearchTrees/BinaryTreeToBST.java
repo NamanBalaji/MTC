@@ -15,7 +15,7 @@ public class BinaryTreeToBST {
         inorderTraversal(root);
 
         Collections.sort(dataInorder);
-        inorderReplace(root, counter);
+        inorderReplace(root);
 
         return root;
     } 
@@ -28,13 +28,13 @@ public class BinaryTreeToBST {
         inorderTraversal(root.right);
     } 
 
-    private static void inorderReplace(TreeNode root, int counter){
+    private static void inorderReplace(TreeNode root){
         if(root == null || counter >= dataInorder.size()) return;
 
-        inorderReplace(root.left, counter);
+        inorderReplace(root.left);
         root.data = dataInorder.get(counter);
         counter += 1;
-        inorderReplace(root.right, counter);
+        inorderReplace(root.right);
 
     }
 
