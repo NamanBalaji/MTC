@@ -2,35 +2,55 @@ package SearchingAndSorting;
 
 public class FirstAndLast {
     public static int[] searchRange(int[] nums, int target) {
-        int[] ret = {-1, -1};
+        int[] arr = new int[2];
+        arr[0] = firstOccurrence(nums, target);
+        arr[1] = lastOccurrence(nums, target);
+        
+        return arr;
+    }
     
-        // the first binary search to find the left boundary
-        int l = 0, r = nums.length-1;
-        while(l < r) {
-            int mid = (l+r)/2;
-            if (nums[mid] < target)
-                l = mid + 1;
-            else
-                r = mid;
+    //first occurrence
+    public static int firstOccurrence(int[] arr, int target){
+        int start = 0;
+        int end = arr.length-1;
+        int res = -1;
+        
+        while(start <= end){
+            int mid = start + (end - start)/2;
+            if(arr[mid] == target){
+                res = mid;
+                end = mid-1;
+            }
+            else if(arr[mid] > target){
+                end = mid-1;
+            }
+            else{
+                start = mid+1;
+            }
         }
+        return res;
+    }
     
-        // if target can not be found, return {-1, -1}
-        if (nums[l] != target)
-            return ret;
-    
-        ret[0] = l;
-        // second binary search to find the right boundary
-        r = nums.length-1;
-        while(l < r) {
-            // mid is calculated differently
-            int mid = (l + r+1)/2;
-            if (nums[mid] > target)
-                r = mid - 1;
-            else
-                l = mid;
+    //last occurrence
+    public static int lastOccurrence(int[] arr, int target){
+        int start = 0;
+        int end = arr.length-1;
+        int res = -1;
+        
+        while(start <= end){
+            int mid = start + (end - start)/2;
+            if(arr[mid] == target){
+                res = mid;
+                start = mid+1;
+            }
+            else if(arr[mid] > target){
+                end = mid-1;
+            }
+            else{
+                start = mid+1;
+            }
         }
-        ret[1] = l;
-        return ret;
+        return res;
     }
 
     public static void main(String[] args) {
