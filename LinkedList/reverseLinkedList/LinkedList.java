@@ -1,4 +1,4 @@
-package reverseLinkedList;
+package LinkedList.reverseLinkedList;
 class LinkedList {
 
 	Node head;
