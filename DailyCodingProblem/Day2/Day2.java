@@ -35,3 +35,6 @@ public class Day2 {
         print(ans2);
     }
 }
+
+//Time: O(n)
+//Space: O(1)

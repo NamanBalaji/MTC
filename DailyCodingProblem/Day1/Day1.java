@@ -25,3 +25,6 @@ public class Day1 {
         System.out.println(findPair(nums, 17));
     }
 }
+
+//Time: O(n)
+//Space: O(n)
