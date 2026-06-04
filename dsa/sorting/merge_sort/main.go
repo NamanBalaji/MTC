@@ -44,4 +44,9 @@ func main() {
 	})
 
 	fmt.Println(a)
+
+	b := []int{1, 4, 6, 2, 9, 10, 21, 3, 7, 17, 8, 14}
+	mergeSort(b)
+
+	fmt.Println(b)
 }
